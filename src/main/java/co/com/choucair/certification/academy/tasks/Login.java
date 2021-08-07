@@ -23,11 +23,10 @@ public class Login implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor){
-        actor.attemptsTo(Click.on(ChoucairLoginPage.LOGIN_BUTTON),
-                Enter.theValue(strUser).into(ChoucairLoginPage.INPUT_USER),
-                Enter.theValue((strPassword)).into(ChoucairLoginPage.INPUT_PASSWORD),
-                Click.on(ChoucairLoginPage.ENTER_BUTTON)
-        );
+        actor.attemptsTo(Click.on(ChoucairLoginPage.LOGIN_BUTTON));
+        actor.attemptsTo(Enter.theValue(strUser).into(ChoucairLoginPage.INPUT_USER));
+        actor.attemptsTo(Enter.theValue((strPassword)).into(ChoucairLoginPage.INPUT_PASSWORD));
+        actor.attemptsTo(Click.on(ChoucairLoginPage.ENTER_BUTTON));
 
     }
 }

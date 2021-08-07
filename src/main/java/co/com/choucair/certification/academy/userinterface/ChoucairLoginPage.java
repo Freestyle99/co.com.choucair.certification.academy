@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class    ChoucairLoginPage extends PageObject {
 
     public static final Target LOGIN_BUTTON = Target.the("button tat shows us the form to login")
-            .located(By.xpath("//div[@class='d-none de-lg-block']//strong[contains(text(),'Ingresar')]"));
+            .located(By.xpath("//*[@id='nav-menu']/ul[2]/li/a"));
 
     public static final Target INPUT_USER = Target.the("where do we write the user")
             .located(By.id("username"));
@@ -16,5 +16,5 @@ public class    ChoucairLoginPage extends PageObject {
             .located(By.id("password"));
 
     public static final Target ENTER_BUTTON = Target.the("button to confirm login")
-            .located(By.xpath("//button[contains(@class,'btn btn-primary')]"));
+            .located(By.xpath("//*[@id='Ingresar']/div/div/div[2]/div[2]/form/div[3]/button"));
 }

@@ -6,11 +6,11 @@ Feature: Academy Choucair
   @scenario1
   Scenario: Search for a automation course
     Given than Rose wants to learn automation at the academy Choucair
-    | strUser   | strPassword  |
-    | TuUsuario | TuClave      |
+    | strUser    | strPassword    |
+    | 1026306498 | Choucair2021*  |
     When she search for the course on the Choucair Academy platform
-    | strCourse               |
-    | Metodologia Bancolombia |
+    | strCourse                           |
+    |  |
     Then she finds the course called
     | strCourse               |
-    | Metodologia Bancolombia |
+    | Guías Técnicas - Analista Financial |
